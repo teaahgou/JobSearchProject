@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+	background: #f2f2f2;
+}
+nav{
+	background: #1b1b1b;
+}
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+nav .logo a{
+	text-decoration: none;
+	float: left;
+	color: white;
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 70px;
+	padding-left: 60px;
+}
+
+ nav ul{
+ 	float: right;
+ 	list-style: none;
+ 	margin-top: 15px;
+ 	margin-bottom: 25px;
+ 	margin-right: 145px;
+ 	position: relative;
+ }
+
+ nav ul li{
+ 	float: left;
+ 	display: inline-block;
+ 	background: #1b1b1b;
+ 	margin: 0 5px;
+ }
+ 
+
+ nav ul li a{
+ 	color: white;
+ 	text-decoration: none;
+ 	line-height: 50px;
+ 	font-size: 18px;
+ 	padding: 8px 15px;
+ }
+ nav ul li a:hover{
+ 	color: blue;
+ 	border-radius: 5px;
+ 	box-shadow: 0 0 5px #33ffff,
+ 	            0 0 5px #66ffff;
+				text-decoration: none;
+ }
+ nav ul ul{
+ 	position:absolute;
+ 	border-top: 3px solid cyan;
+ 	width: 250px;
+ 	top: 50px;
+    visibility: hidden;
+    transition:.05s;
+    padding-right: 10px;
+	
+ }
+ nav ul li:hover > ul{
+    visibility: visible;
+ }
+ nav ul ul li{
+ 	 position:relative;
+ 	 margin: 0px;
+ 	 width: 250px;
+	 text-align: center;
+ 	 float: none;
+ 	 display: list-item;
+ 	 border-bottom: 1px solid rgba(0,0,0,0.3);
+ }
+ .icon,input{
+ 	display: none;
+ }
+ 
+@media all and (max-width: 968px){
+	nav ul{
+		margin-right: 0px;
+		float: left;
+	}
+	nav .logo a{
+		padding-left: 30px;
+		width: 100%;
+	}
+	nav ul li, nav ul ul li{
+		display: block;
+		width: 100%;
+	}
+	nav ul ul{
+		top: 70px;
+		position: static;
+		border-top: none;
+		float: none;
+	}
+	 nav ul li:hover > ul{
+        display: block;
+ }
+	
+	.icon{
+		display: block;
+		color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+	}
+	nav ul li a:hover{
+		box-shadow: none;
+	}
+	
+      ul{
+		display: none;
+	}
+	input[id=btn]:checked + ul {
+		display: block;
+ }
+ 

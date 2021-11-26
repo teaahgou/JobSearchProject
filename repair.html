@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobSearch</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  type="text/css" href="new.css">
+  <link rel="stylesheet"   type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <style>
+
+    label{
+      font-weight: 600;
+    }
+    .custom-control{
+      font-weight: normal;
+    }
+    .dropdown-toggle{
+      padding-left: 10px;
+      border-radius: 0px !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+    padding: 15px;
+    }
+    .input-group .form-control{
+      width: 100%;
+      border-radius: 0.25rem !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu{
+      min-width: 320px;
+    }
+    .dropdown-menu{
+      box-shadow: 1px 4px 8px -1px #c1c1c1;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+   <nav>
+     <div class="logo"><a href="repair.html"><img src="logo.png" alt="JobSearchLogo" style="width: 50px; height: 50px; margin-right: 5px;"> JobSearch</a></div>
+      <label for="btn" class="icon">
+      <span class="fas fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn"> 
+     <ul>
+       <li><a href="repair.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li>
+         <a href="#">Services</a>
+         <ul>
+           <li><a href="#">Interview tips</a></li>
+           <li><a href="#">Job Strategy</a></li>
+           <li><a href="#">Pandemic advice</a></li>
+           <li><a href="#">Career management</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href="#">Features</a>
+         <ul>
+           <li><a href="resume.html">Resume</a></li>
+           <li><a href="login.php">Log in</a></li>
+           <li><a href="employer.html">Employer</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href="#">Contacts</a>
+         <ul>
+           <li><a href="inq.html">Inquiry</a></li>
+           <li><a href="https://www.dole.gov.ph/">DOLE</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href="logout.php">LOG OUT</a>
+       </li>
+     </ul>
+   </nav>
+
+   <div class="bg-image" 
+     style="background-image: url('bg1.jpg');;
+            height: 800px; background-size: cover; background-repeat: no-repeat;">
+			<div class="box sixteen-nine">
+<div class="content">
+<span></span>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	
+
+<<div class="container">
+	<div class="row">
+		<div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2 col-12">
+			<h3 class="text-center text-light">Find Better. Faster with JobSearch</h3>
+				<div class="input-group" id="adv-search">
+					<input type="text" class="form-control form-control-search" placeholder="Search for your job." />
+						<div class="input-group-btn">
+							<div class="btn-group" role="group">
+								<div class="dropdown dropdown-lg">
+									<button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</button>
+										<div class="dropdown-menu dropdown-menu-right" role="menu">
+											<form>
+												<div class="form-group">
+														<label for="key_skill">Key Skill</label>
+																<input type="text" class="form-control" id="key_skill" placeholder="Enter Job Keywords">
+												</div>
+												<div class="form-group">
+														<label for="location">Location</label>
+																<input type="text" class="form-control" id="location" placeholder="Location">
+												</div>
+												<div class="form-group">
+														<label for="experience_years">Experience(Years)</label>
+																<input type="text" class="form-control" id="experience_years" placeholder="Years">
+												</div>
+												<div class="form-group">
+														<label for="experience_months">Experience(Months)</label>
+																<input type="text" class="form-control" id="experience_months" placeholder="Months">
+												</div>
+												<div class="form-group">
+														<label for="industry">Industry</label>
+																<input type="text" class="form-control" id="industry" placeholder="Industry">
+												</div>	
+												<div class="form-group">
+														<label for="function">Function</label>
+																<input type="text" class="form-control" id="function" placeholder="Function">
+												</div>
+												<hr>
+												<div class="form-group text-center">
+													<button type="submit" class="btn btn-primary">Search</button>
+												</div>
+											</form>
+										</div>
+									</div>
+													<button type="submit" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+	</div>
+</div>	
+
+</body>
+</html>
